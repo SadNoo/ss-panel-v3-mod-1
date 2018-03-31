@@ -361,6 +361,9 @@ class AuthController extends BaseController
         $user->invite_num = Config::get('inviteNum');
         $user->auto_reset_day = Config::get('reg_auto_reset_day');
         $user->auto_reset_bandwidth = Config::get('reg_auto_reset_bandwidth');
+        $user->node_connector = Config::get('node_connector');
+        $user->sendDailyMail = Config::get('sendDailyMail');
+        $user->node_speedlimit = Config::get('node_speedlimit');
         if (Config::get('enable_invite_code')=='true') {
             $user->ref_by = $c->user_id;
         } else {
@@ -372,7 +375,6 @@ class AuthController extends BaseController
         $user->money=0;
         $user->class=0;
         $user->plan='A';
-        $user->node_speedlimit=0;
         $user->theme=Config::get('theme');
 
         $group=Config::get('ramdom_group');

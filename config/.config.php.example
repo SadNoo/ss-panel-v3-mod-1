@@ -316,3 +316,10 @@ $System_Config['zfbjk_qrcodeurl']='https://www.zhaojin97.cn/wp-content/uploads/2
 
 #不安全中转模式，这个开启之后使用除了 auth_aes128_md5 或者 auth_aes128_sha1 以外的协议地用户也可以设置和使用中转，但是，强烈推荐不开启。
 $System_Config['relay_insecure_mode']='true';
+
+#新用户IP数
+$System_Config['node_connector']='10';
+#新用户速度
+$System_Config['node_speedlimit']='200.00';
+#新用户每日邮件(1为开启,0为关闭)
+$System_Config['sendDailyMail']='0';
