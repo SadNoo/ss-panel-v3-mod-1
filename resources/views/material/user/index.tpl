@@ -261,7 +261,7 @@
                                           
 											<p><dt>同时使用IP限制</dt>
 											{if $user->node_connector!=0}
-											<dd>{$user->node_connector}个</dd>
+											<dd>{$user->node_connector}</dd>
 											{else}
 											<dd>不限制</dd>
 											{/if}</p>
