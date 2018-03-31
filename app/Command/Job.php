@@ -677,7 +677,7 @@ class Job
             }
 
             if (strtotime($user->expire_in)+((int)Config::get('enable_account_expire_delete_days')*86400)<time()) {
-                if (Config::get('enable_account_expire_delete')=='true') {
+                if (Config::get('enable_account_expire_delete')=='true' && ($user->money) < 5) {
                     $subject = Config::get('appName')."-您的用户账户已经被删除了";
                     $to = $user->email;
                     $text = "您好，系统发现您的账号已经过期 ".Config::get('enable_account_expire_delete_days')." 天了，帐号已经被删除。" ;
