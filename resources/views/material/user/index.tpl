@@ -333,7 +333,7 @@
 
 
 
-							<div class="card">
+					<!--	<div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">续命获取流量</p>
@@ -365,7 +365,7 @@
 									</div>
 
 								</div>
-							</div>
+							</div>		-->
 
 
 						{if $enable_duoshuo=='true'}
