@@ -262,14 +262,14 @@ class Job
             Job::backup();
         }
 
-        Job::updatedownload();
+//        Job::updatedownload();
     }
 
-    public static function updatedownload()
+/*    public static function updatedownload()
     {
         system('cd '.BASE_PATH."/public/ssr-download/ && git pull", $ret);
         echo $ret;
-    }
+    }	*/
 
     public static function CheckJob()
     {
