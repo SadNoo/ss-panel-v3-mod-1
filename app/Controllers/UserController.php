@@ -1521,4 +1521,9 @@ class UserController extends BaseController
         $newResponse = $response->withStatus(302)->withHeader('Location', '/user');
         return $newResponse;
     }
+    
+        public function resource($request, $response, $args)
+    {
+        return $this->view()->display('user/resource.tpl');
+    }
 }

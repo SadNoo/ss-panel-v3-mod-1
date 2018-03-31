@@ -293,6 +293,12 @@
 							</li>
 							
 							<li>
+								<a href="/user/resource">
+									<i class="icon icon-lg">visibility</i>&nbsp;使用教程
+								</a>
+							</li>
+
+							<li>
 								<a href="/user/relay">
 									<i class="icon icon-lg">compare_arrows</i>&nbsp;中转规则
 								</a>

@@ -105,6 +105,8 @@ $app->group('/user', function () {
     $this->post('/coupon_check', 'App\Controllers\UserController:CouponCheck');
     $this->post('/buy', 'App\Controllers\UserController:buy');
 
+    $this->get('/resource', 'App\Controllers\UserController:resource');
+
 
     // Relay Mange
     $this->get('/relay', 'App\Controllers\RelayController:index');
