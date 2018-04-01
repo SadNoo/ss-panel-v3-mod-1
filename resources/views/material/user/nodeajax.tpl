@@ -3,8 +3,8 @@
 <div id="load{$id}_chart" style="height: 300px; width: 100%;"></div>
 	<div id="up{$id}_chart" style="height: 300px; width: 100%;"></div>
 	<div id="alive{$id}_chart" style="height: 300px; width: 100%;"></div>
-	<div id="speedtest{$id}_chart" style="height: 300px; width: 100%;"></div>
-	<div id="speedtest{$id}_ping_chart" style="height: 300px; width: 100%;"></div>
+<!--	<div id="speedtest{$id}_chart" style="height: 300px; width: 100%;"></div>
+	<div id="speedtest{$id}_ping_chart" style="height: 300px; width: 100%;"></div>		-->
 
 				
 	<script type="text/javascript">
@@ -112,7 +112,8 @@
 			});
 			
 			
-			
+
+/*			
 			{$speedtests=$point_node->getSpeedtestResult()}
 			speedtest_chart{$id} = new CanvasJS.Chart("speedtest{$id}_chart",
 			{
@@ -398,7 +399,7 @@
 				}
 				]
 			});
-			
+			*/
 			
 			
 			
@@ -409,8 +410,8 @@
 			chart{$id}.render();
 			up_chart{$id}.render();
 			alive_chart{$id}.render();
-			speedtest_chart{$id}.render();
-			speedtest_ping_chart{$id}.render();
+//			speedtest_chart{$id}.render();
+//			speedtest_ping_chart{$id}.render();
 			
 			
 		});

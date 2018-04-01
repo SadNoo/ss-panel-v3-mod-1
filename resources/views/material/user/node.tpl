@@ -25,10 +25,10 @@
 						<div class="card margin-bottom-no">
 							<div class="card-main">
 								<div class="card-inner">
-									<h4>注意!</h4>
-									<p>请勿在任何地方公开节点地址！</p>
+								<!--	<h4>注意!</h4>
+									<p>请勿在任何地方公开节点地址！</p>		-->
 									<p>流量比例为0.5即使用1000MB按照500MB流量记录记录结算.</p>
-									<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如果您不知道如何查看节点的详细信息和二维码，请点我。</a>
+								<!--	<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如果您不知道如何查看节点的详细信息和二维码，请点我。</a>	-->
 								</div>
 							</div>
 						</div>
@@ -44,6 +44,7 @@
 											{$id=0}
 											{foreach $node_prefix as $prefix => $nodes}
 												{$id=$id+1}
+												{foreach $nodes as $node}
 
 													<div class="tile tile-collapse">
 														<div data-toggle="tile" data-target="#heading{$node_order->$prefix}">
@@ -53,7 +54,7 @@
 																</div>
 															</div>
 															<div class="tile-inner">
-																<div class="text-overflow">{$prefix} | <i class="icon icon-lg">person</i> {$node_alive[$prefix]} | <i class="icon icon-lg">build</i> {$node_method[$prefix]} | <i class="icon icon-lg">traffic</i> {if isset($node_bandwidth[$prefix])==true}{$node_bandwidth[$prefix]}{else}N/A{/if}</div>
+																<div class="text-overflow">{$prefix} | <i class="icon icon-lg">person</i> {$node_alive[$prefix]} | <i class="icon icon-lg">build</i> {$node_method[$prefix]} |  {$node->traffic_rate} 倍 | <i class="icon icon-lg">traffic</i> {if isset($node_bandwidth[$prefix])==true}{$node_bandwidth[$prefix]}{else}N/A{/if}</div>
 															</div>
 														</div>
 														<div class="collapsible-region collapse" id="heading{$node_order->$prefix}">
@@ -61,7 +62,6 @@
 
 																<br>
 
-																{foreach $nodes as $node}
 
 																	{$relay_rule = null}
 																	{if $node->sort == 10}
