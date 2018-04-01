@@ -38,8 +38,7 @@
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">All-in-One(快速配置指导)</p>
-										<p>订阅地址<input type="text" class="input form-control form-control-monospace" name="input1" readonly value="{$baseUrl}/link/{$ssr_sub_token}?mu=1" readonly="true"><button class="copy-text btn btn-brand" type="button" data-clipboard-text="{$baseUrl}/link/{$ssr_sub_token}?mu=1">复制订阅地址</button><br>
-										<p><a href="/user/resource">点击这里查看教程</a></p> 
+										<p>复制订阅链接后按照教程进行操作即可</p>
 									<!--	<p>您可以在这里查看您的连接信息。<br>同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息，方便您在诸多的服务器中快速添加，快速切换。</p>
 										<nav class="tab-nav margin-top-no">
 											<ul class="nav nav-list">
@@ -223,7 +222,13 @@
 										</div>		-->
 										<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<p><a class="btn btn-brand btn-flat waves-attach" href="/user/url_reset"><span class="icon">close</span>&nbsp;重置所有链接</a></p>
+                                              <p><a class="btn btn-brand btn-flat waves-attach" href="/user/resource">查看教程</a></p>
+											</div>
+											<div class="card-action-btn pull-right">
+												<p><a class="btn btn-brand btn-flat waves-attach" href="/user/url_reset">重置订阅链接</a></p>
+											</div>
+											<div class="card-action-btn pull-right">
+												<p><a class="copy-text btn btn-brand btn-flat waves-attach" type="button" data-clipboard-text="{$baseUrl}/link/{$ssr_sub_token}?mu=1">复制订阅地址</a></p>
 											</div>
 										</div>
 									</div>
