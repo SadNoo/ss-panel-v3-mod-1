@@ -295,7 +295,33 @@ $System_Config['sendgrid_sender'] = '';
 
 
 #支付系统
+#取值 doiampay,paymentwall,zfbjk,spay,f2fpay,none
+$System_Config['payment_system']='none';
 
+$System_Config['doiampay']=[
+    'enabled' => [
+        'wepay'=>0, // 微信支付1 启用 0 关闭
+        'alipay'=>0, // 支付宝1 启用 0 关闭
+        'qqpay'=>0, // QQ支付1 启用 0 关闭
+    ],
+    'mchdata' => [
+        'wepay'=>[
+            'mchid' => 188888888,   // 商户号
+            'phone' => 18888888888, //手机号
+            'token' => "example" // 安全验证码
+        ],
+        'alipay'=>[
+            'mchid' => 188888888,   // 商户号
+            'phone' => 18888888888, //手机号
+            'token' => "example" // 安全验证码
+        ],
+        'qqpay'=>[
+            'mchid' => 188888888,   // 商户号
+            'phone' => 18888888888, //手机号
+            'token' => "example" // 安全验证码
+        ],
+    ]
+];
 #取值 paymentwall,zfbjk,spay,none
 $System_Config['payment_system']='none';
 

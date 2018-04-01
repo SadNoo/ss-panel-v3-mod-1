@@ -14,6 +14,8 @@ class Pay
     {
         $driver = Config::get("payment_system");
         switch ($driver) {
+            case "doiampay":
+                return Pay::doiampay_html($user);
             case "paymentwall":
                 return Pay::pmw_html($user);
             case 'spay':
@@ -26,6 +28,14 @@ class Pay
         return null;
     }
 
+    /**
+     * DoiamPay
+     * @param  User   $user User
+     * @return String       HTML
+     */
+    public static function doiampay_html(User $user){
+        return \App\Utils\DoiAMPay::render();
+    }
 
     private static function spay_html($user)
     {
