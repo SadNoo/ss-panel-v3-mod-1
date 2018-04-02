@@ -261,7 +261,7 @@
 							
 							<li>
 								<a href="/user/invite">
-									<i class="icon icon-lg">loyalty</i>&nbsp;邀请码
+									<i class="icon icon-lg">loyalty</i>&nbsp;推广联盟
 								</a>
 							</li>
 							
@@ -347,7 +347,7 @@
 						
 							<li>
 								<a href="/user/shop">
-									<i class="icon icon-lg">shop</i>&nbsp;商店
+									<i class="icon icon-lg">shop</i>&nbsp;购买套餐
 								</a>
 							</li>
 							
@@ -358,7 +358,7 @@
 
 							<li>
 								<a href="/user/code">
-									<i class="icon icon-lg">code</i>&nbsp;充值
+									<i class="icon icon-lg">code</i>&nbsp;充值余额
 								</a>
 							</li>
 						</ul>
